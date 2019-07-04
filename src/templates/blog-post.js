@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import HeaderBack from '../components/HeaderBack';
-import SEO from '../components/Seo';
+import SEO from '../components/SEO';
 
 import HeadingPrimary from '../elements/HeadingPrimary';
 import TextBody from '../elements/TextBody';
