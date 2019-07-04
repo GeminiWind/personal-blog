@@ -35,10 +35,9 @@ function Blog({ data }) {
       <HeaderLogo />
       <Layout>
         <Hero>
-          <HeadingPrimary>Lewis Gatsby Starter Blog</HeadingPrimary>
+          <HeadingPrimary>HaiDV Blog</HeadingPrimary>
           <TextBody>
-            This is a custom Gatsby starter template to start a new blog or
-            personal website.
+            This is a personal blog of HaiDV about the world of coding 💻.
           </TextBody>
         </Hero>
         {data.allMarkdownRemark.edges.map(({ node }) => (

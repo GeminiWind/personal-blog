@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Lewis Gatsby Starter Blog`,
-    description: `A custom Gatsby starter template to start a new blog or personal website.`,
+    title: `HaiDV Coding Blog`,
+    description: `A personal blog about coding world.`,
     author: `@author`,
     siteUrl: `https://lewis-gatsby-starter-blog.firebaseapp.com/`,
   },
@@ -50,8 +50,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Lewis Gatsby Starter Blog`,
-        short_name: `Lewis Gatsby Starter Blog`,
+        name: `HaiDV Coding Blog`,
+        short_name: `HaiDV Coding Blog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
