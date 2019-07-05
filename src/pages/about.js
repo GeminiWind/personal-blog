@@ -38,25 +38,26 @@ function Info({ data }) {
       <Layout>
         <HeadingPrimary>About</HeadingPrimary>
         <ImgDiv>
-          <Img fluid={data.RandomPhoto.childImageSharp.fluid} />
+          <Img fluid={data.PersonalPhoto.childImageSharp.fluid} />
         </ImgDiv>
         <TextBody>
-          Building mr concerns servants in he outlived am breeding. He so lain
-          good miss when sell some at if. Told hand so an rich gave next. How
-          doubt yet again see son smart. While mirth large of on front. Ye he
-          greater related adapted proceed entered an. Through it examine express
-          promise no. Past add size game cold girl off how old.
+          I’m HaiDV – coder, gamer, book lover.
           <br />
           <br />
-          Bringing so sociable felicity supplied mr. September suspicion far him
-          two acuteness perfectly. Covered as an examine so regular of. Ye
-          astonished friendship remarkably no. Window admire matter praise you
-          bed whence. Delivered ye sportsmen zealously arranging frankness
-          estimable as. Nay any article enabled musical shyness yet sixteen yet
-          blushes. Entire its the did figure wonder off.
+          I love to build new stuff. It can be minor, a utility tool or can be a big app.
+          <br />
+          <br />
+          I like reading books. My favorite books are <i>Code Clean</i>, <i>Code Complete</i>.
+          <br />
+          <br />
+          If you’d like to know a few milestones in my journey, visit this page.
+          I love to talk about tech, working experience and so on. Got something to share? Please get in touch with me.
+          <br />
+          <br />
+          Have a great day! or night?
         </TextBody>
         <ButtonWrapper>
-          <a href="mailto:your&#64;email.com">
+          <a href="mailto:gemini.wind285&#64;email.com">
             <Button>Get in touch</Button>
           </a>
         </ButtonWrapper>
@@ -69,7 +70,7 @@ export default Info;
 
 export const query = graphql`
   query {
-    RandomPhoto: file(relativePath: { eq: "RandomPhoto.jpg" }) {
+    PersonalPhoto: file(relativePath: { eq: "PersonalPhoto.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1400) {
           ...GatsbyImageSharpFluid_withWebp
