@@ -3,7 +3,7 @@ module.exports = {
     title: `HaiDV Coding Blog`,
     description: `A personal blog about coding world.`,
     author: `@author`,
-    siteUrl: `https://lewis-gatsby-starter-blog.firebaseapp.com/`,
+    siteUrl: `https://blog.haidv.me/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
