@@ -57,6 +57,7 @@ Amazon S3 or Amazon Simple Storage Service is a service offered by Amazon Web Se
 
 - S3 can host static website with domain provided by S3 or you can use your own custom domain.
 - Specify the index page and error page. That's all :)
+- Bucket must provide public-read ACL to serve static website
 
 ### Events
 
