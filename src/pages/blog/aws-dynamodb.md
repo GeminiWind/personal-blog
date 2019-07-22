@@ -54,9 +54,24 @@ We can change any attribute of an item except its keys, these keys are an identi
 <br>
 
 DynamoDB supports different data types for attributes of an item, they can be mainly categorised into the following:
-- Scalar Types : Number, String, Binary, Boolean and Null.
-- Document Types : List and Map
-- Set Types : Number Set, String Set, and Binary Set.
+- _Scalar Types_ : Number, String, Binary, Boolean and Null.
+- _Document Types_ : List and Map
+- _Set Types_ : Number Set, String Set, and Binary Set.
+
+
+### Secondary Index
+<br>
+<br>
+Amazon DynamoDB provides fast access to items in a table by specifying primary key values. But if you want to fetch the data of attributes other than the primary key, indexing comes into the picture.
+<br>
+<br>
+DynamoDb provides two types of indexing:
+
+- Global secondary index: This index includes a partition key and sort key, which may differ from the source table. It uses the label “global” due to the capability of queries/scans on the index to span all table data, and over all partitions.
+
+
+- Local secondary index: This index shares a partition key with the table, but uses a different sort key. Its “local” nature results from all of its partitions scoping to a table partition with identical partition key value
+
 
 ### Query
 <br>
@@ -126,3 +141,19 @@ When we use Query/Scan operation on a DynamoDB table, then by default the result
 <br>
 <br>
 If the data type of Sort key is a number, then the results will be in a numeric order, otherwise, results will be in UTF-8 bytes. By default sort order is ascending. To get results in a descending order, pass “ScanIndexForward” as “false”.
+
+<br>
+<br>
+
+### Pricing
+
+- _On-Demand Capacity_: is the simplest pricing model around - you pay for storage and requests, and that’s all. No capacity planning or prediction. You pay $1.25 per million writes, and $0.25 per million reads
+- _Provisioned Capacity_: is most common pricing method for DynamoDB, you  pay-per-capacity.You pay to provision a certain throughput for your DynamoDB table, say 100 Read Capacity Units (RCUs) which gives 100 strongly-consistent 4KB reads per second. Single RCU-hour at $0.00013.
+- _Reserved Provisioned Capacity_: Much like Reserved Instances in EC2, reserved capacity in DynamoDB lets you get a discounted price for committing to a certain amount of usage up front. The cost is the same units as Provisioned Capacity, but you buy one or three-year reservations in units of 100 RCUs or WCUs.
+
+### References
+
+- _DynamoDB Guide_: https://www.dynamodbguide.com
+- _Core concepts of Amazon DynamoDB_: https://medium.com/tensult/core-concepts-of-amazon-dynamodb-a265a3fc70a
+- _Data Modeling in AWS DynamoDB_: https://medium.com/swlh/data-modeling-in-aws-dynamodb-dcec6798e955
+- _Advanced Design Patterns for Amazon DynamoDB_: https://medium.com/@nabtechblog/advanced-design-patterns-for-amazon-dynamodb-354f97c96c2 
