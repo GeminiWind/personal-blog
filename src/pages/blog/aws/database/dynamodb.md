@@ -2,7 +2,7 @@
 title: 'AWS Series: DynamoDB'
 date: '2019-07-19'
 ---
-![photo](dynamodb.jpg)
+![photo](../../../../images/blog/aws/dynamodb/dynamodb.jpg)
 <br>
 DynamoDB is a managed NoSQL database provided by AWS, and it is a highly scalable and reliable database.
 <br>
