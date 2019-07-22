@@ -14,6 +14,19 @@ Common use cases for S3:
 - Static website hosting
 - Cloud-native mobile and Internet application hosting
 - Disaster recovery
+<br>
+<br>
+
+## Pricing
+<br>
+<br>
+Cost of AWS S3 will be calculated by used storage space per GB and storage class. At average, it 's about __0.025$/GB__.
+<br>
+<br>
+
+Detailed cost for each storage class can be found [__here__](https://aws.amazon.com/s3/pricing/).
+<br>
+<br>
 
 ## Storage Classes
 <br>
@@ -64,6 +77,7 @@ No limit on how much of data that we can store inside a bucket.
 <br>
 ![photo](s3_log.png)
 
+
 - Log file will be store in __.TXT__
 - Target log bucket must be different with the current bucket but they must be the same region.
 - Log metrics can be consumed later by Athena or ELK stack.
@@ -111,10 +125,10 @@ No limit on how much of data that we can store inside a bucket.
 A lifecycle configuration is a set of rules that define actions that Amazon S3 applies to a group of objects or to bucket itself to move objects from one storage system to another and finally expiring it. We can define amazon s3 to tom move data between various storage class on defined schedule
 
 There are two types of actions:
-- Transition actions: Define when objects transition to another storage class. For example, you might choose to transition objects to the STANDARD_IA storage class 30 days after you created them, or archive objects to the GLACIER storage class one year after creating them
+- _Transition actions_: Define when objects transition to another storage class. For example, you might choose to transition objects to the STANDARD_IA storage class 30 days after you created them, or archive objects to the GLACIER storage class one year after creating them
 
 
-- Expiration actions: Define when objects expire. Amazon S3 deletes expired objects on your behalf.
+- _Expiration actions_: Define when objects expire. Amazon S3 deletes expired objects on your behalf.
 
 ## Transfer acceleration
 <br>
