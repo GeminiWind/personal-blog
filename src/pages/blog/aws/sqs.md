@@ -2,7 +2,7 @@
 title: 'AWS Series: SQS'
 date: '2019-07-22'
 ---
-![photo](../../../images/blog/aws/sqs/sqs.jpg)
+![photo](../../../images/blog/aws/sqs/sqs.png)
 <br>
 Queues are a powerful way of combining software architectures. They allow for asynchronous communication between different systems, and are especially useful when the throughput of the systems is unequal.   
 <br>
@@ -133,6 +133,15 @@ Below is the diagram describing the message lifecycle in AWS SQS
 <br>
 <br>
 
+## Long polling / short polling
+
+- There are 2 ways to retrieve message from queue: long polling vs short polling (default)
+- With short polling:
+  - SQS samples only a subset of the servers (based on a weighted random distribution) and returns messages from just those servers.
+  - A receive request might not return all the messages in the queue. But a subsequent receive request would return the message
+- With Long polling,
+  - request persists for the time specified and returns as soon as the message is available thereby reducing costs and time the message has to dwell in the queue
+
 ## Batching
 <br>
 <br>
@@ -143,9 +152,22 @@ It helps lower cost and also increases the throughput
 <br>
 <br>
 
+## Pricing
+
+- The first 1 million monthly requests are free.
+- After that, the pricing is as follows for all regions:  Standard Queue: $0.40 ($0.00000040 per 1M request); FIFO Queue: $0.50 ($0.00000050 per 1M request)
+
 ## Other note
 
 - SQS is pull-based, not push-based
 - Messages are 256 KB in size. If message size is larger more than this limit, you can leverage S3 or DynamoDB to store message content and in the message, just point to S3 store your message
 - Messages are kept in a queue from 1 minute to 14 days.
 - The default retention period is 4 days.
+
+## References 
+
+- Dissecting SQS FIFO Queues — Does Ordered and Exactly Once Messaging Really Exist: _https://sookocheff.com/post/messaging/dissecting-sqs-fifo-queues/_
+- Simple Queue Service – SQS: _http://jayendrapatil.com/aws-sqs-simple-queue-service/_
+- A Node.js introduction to Amazon Simple Queue Service (SQS): _https://medium.com/@drwtech/a-node-js-introduction-to-amazon-simple-queue-service-sqs-9c0edf866eca_
+- Deduplicating Amazon SQS Messages: _https://medium.com/swlh/deduplicating-amazon-sqs-messages-dc114d1e6545_
+- Amazon Simple Queue Service: _https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html_
