@@ -2,7 +2,7 @@
 title: 'AWS Series: SQS'
 date: '2019-07-22'
 ---
-![photo](../../../images/blog/aws/sqs/sqs.png)
+![SQS](../../images/blog/aws/sqs/sqs.png)
 <br>
 Queues are a powerful way of combining software architectures. They allow for asynchronous communication between different systems, and are especially useful when the throughput of the systems is unequal.   
 <br>
@@ -45,7 +45,7 @@ AWS offers a service to support queueing call SQS (Simple Queue Service) with ou
 There are three main parts in a distributed messaging system: the components of your distributed system, your queue (distributed on Amazon SQS servers), and the messages in the queue.
 <br>
 <br>
-![photo](../../../images/blog/aws/sqs/arch-overview.png)
+![Architecture Overview](../../images/blog/aws/sqs/arch-overview.png)
 
 <br>
 <br>
@@ -62,7 +62,7 @@ One important detail that should be mentioned – there are two types of queues 
   -  “best effort ordering”: ensures that messages are generally delivered in the same order as they are sent but it does not provide a guarantee.
 <br>
 <br>
-![Standard Queue](../../../images/blog/aws/sqs/standard-queue.png)
+![Standard Queue](../../images/blog/aws/sqs/standard-queue.png)
 <br>
 - FIFO (First-In-First-Out)
   - not as high throughput:  300 transactions per second and 3000 messages per second with batching
@@ -71,7 +71,7 @@ One important detail that should be mentioned – there are two types of queues 
   - prevent duplicated message
 <br>
 <br>
-![FIFO Queue](../../../images/blog/aws/sqs/fifo-queue.png)
+![FIFO Queue](../../images/blog/aws/sqs/fifo-queue.png)
 <br>
 <br>
 
@@ -124,7 +124,7 @@ because the system is distributed, there’s no guarantee that the consumer will
 
 Below is the diagram describing the message lifecycle in AWS SQS
 <br>
-![photo](../../../images/blog/aws/sqs/message-lifecycle.png)
+![Message LifeCycle](../../images/blog/aws/sqs/message-lifecycle.png)
 <br>
 <br>
 1. Component 1 sends Message A to a queue, and the message is redundantly distributed across the SQS servers.
