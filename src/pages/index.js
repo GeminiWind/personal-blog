@@ -1,77 +1,55 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
-import styled from 'styled-components';
+/* Vendor imports */
+import React from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+/* App imports */
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import PostList from '../components/post-list'
+import ArchivePagination from '../components/archive-pagination'
+import Config from '../../config'
 
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
-import HeaderLogo from '../components/HeaderLogo';
+const IndexPage = ({ data }) => (
+  <Layout>
+    <SEO title="Home" description={Config.siteDescription} path="" />
+    <PostList posts={data.allMarkdownRemark.edges} />
+    <ArchivePagination nextPage={2} />
+  </Layout>
+)
 
-import HeadingPrimary from '../elements/HeadingPrimary';
-import HeadingSecondary from '../elements/HeadingSecondary';
-import TextBody from '../elements/TextBody';
-import TextDate from '../elements/TextDate';
-
-const Hero = styled.div`
-  margin-bottom: 20vh;
-
-  @media (max-width: 849px) {
-    margin-bottom: 15vh;
-  }
-`;
-
-const Post = styled.div`
-  border-bottom: 1px solid lightgray;
-  margin-bottom: 50px;
-
-  @media (max-width: 849px) {
-    padding-left: 0;
-  }
-`;
-
-function Blog({ data }) {
-  return (
-    <>
-      <SEO title="Blog" />
-      <HeaderLogo />
-      <Layout>
-        <Hero>
-          <HeadingPrimary>HaiDV Blog</HeadingPrimary>
-          <TextBody>
-            This is a personal blog of HaiDV about the world of coding 💻.
-          </TextBody>
-        </Hero>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Link to={node.fields.slug}>
-            <Post key={node.id}>
-              <HeadingSecondary>{node.frontmatter.title}</HeadingSecondary>
-              <TextBody>{node.excerpt}</TextBody>
-              <TextDate>{node.frontmatter.date}</TextDate>
-            </Post>
-          </Link>
-        ))}
-      </Layout>
-    </>
-  );
+IndexPage.propTypes = {
+  data: PropTypes.shape({
+    allMarkdownRemark: PropTypes.shape({
+      edges: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+    }).isRequired,
+  }).isRequired,
 }
 
 export const query = graphql`
-  query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+  {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/index.md$/" } }
+    ) {
       edges {
         node {
-          id
           frontmatter {
+            path
             title
-            date(formatString: "MMMM DD, YYYY")
+            tags
+            excerpt
+            cover {
+              childImageSharp {
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid_tracedSVG
+                }
+              }
+            }
           }
-          fields {
-            slug
-          }
-          excerpt
         }
       }
     }
   }
-`;
+`
 
-export default Blog;
+export default IndexPage

@@ -1,33 +1,33 @@
 {
-  "name": "lewis-gatsby-starter-blog",
-  "private": true,
-  "description": "A custom Gatsby starter template to start a new blog or personal website.",
-  "version": "0.1.0",
-  "author": "Lewis Llobera <billobera@gmail.com>",
+  "name": "haidv-blog",
+  "description": "HaiDV Blog Site",
+  "version": "1.0.0",
+  "author": "HaiDV <gemini.wind285@gmail.com>",
   "dependencies": {
-    "babel-plugin-styled-components": "^1.10.1",
-    "gatsby": "^2.10.0",
-    "gatsby-image": "^2.2.1",
-    "gatsby-plugin-catch-links": "^2.1.0",
-    "gatsby-plugin-manifest": "^2.2.0",
-    "gatsby-plugin-offline": "^2.2.0",
-    "gatsby-plugin-react-helmet": "^3.1.0",
-    "gatsby-plugin-robots-txt": "^1.4.0",
-    "gatsby-plugin-sharp": "^2.2.1",
-    "gatsby-plugin-sitemap": "^2.2.0",
-    "gatsby-plugin-styled-components": "^3.1.0",
-    "gatsby-remark-images": "^3.1.0",
-    "gatsby-source-filesystem": "^2.1.0",
-    "gatsby-transformer-remark": "^2.5.0",
-    "gatsby-transformer-sharp": "^2.2.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.5",
-    "react-dom": "^16.8.5",
+    "gatsby": "^2.0.53",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-feed": "^2.0.11",
+    "gatsby-plugin-i18n": "^1.0.1",
+    "gatsby-plugin-less": "^2.0.8",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-robots-txt": "^1.3.0",
+    "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-plugin-sitemap": "^2.0.4",
+    "gatsby-remark-images": "^3.0.1",
+    "gatsby-remark-prismjs": "^3.1.4",
+    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-transformer-remark": "^2.1.17",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "less": "^3.9.0",
+    "prismjs": "^1.15.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
-    "styled-components": "^4.3.2"
-  },
-  "devDependencies": {
-    "prettier": "^1.16.4"
+    "react-icons": "^3.2.2",
+    "react-share": "^2.4.0"
   },
   "keywords": [
     "gatsby"
@@ -35,17 +35,13 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
+    "dev": "gatsby develop",
+    "start": "npm run dev",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lewislbr/lewis-gatsby-starter-blog"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "devDependencies": {
+    "prettier": "^1.15.2"
   }
 }
