@@ -1,39 +1,46 @@
+'use strict';
 
 module.exports = {
-  pathPrefix: '/gatsby-starter-developer-blog',
-  siteUrl: 'https://blog.haidv.me',
-  siteTitle: 'Hai DV',
-  siteDescription: 'Blog about world of coding',
-  author: 'HaiDV',
-  postsForArchivePage: 3,
-  defaultLanguage: 'en',
-  disqusScript: 'https://luigi-colella.disqus.com/embed.js',
-  pages: {
-    home: '/',
-    blog: '/',
-    about: 'about',
-    tag: 'tag',
-    archive: 'archive'
-  },
-  social: {
-    github: 'https://github.com/GeminiWind',
-    linkedin: 'https://linkedin.com/in/đinh-văn-hải-448505141',
-    rss: '/rss.xml'
-  },
-  tags: {
-    aws: {
-      name: 'AWS',
-      description: 'Amazon web service is a platform that offers flexible, reliable, scalable, easy-to-use and cost-effective cloud computing solutions.'
+  url: 'https://blog.haidv.me',
+  pathPrefix: '/',
+  title: 'HaiDV | Software Engineer',
+  subtitle: 'Software Engineer. Going to be Full-stack Javascript Developer',
+  copyright: '© All rights reserved.',
+  disqusShortname: '',
+  postsPerPage: 4,
+  googleAnalyticsId: 'UA-73379983-2',
+  useKatex: false,
+  menu: [
+    {
+      label: 'Home',
+      path: '/'
     },
-    javascript: {
-      description: 'JavaScript is an object-oriented programming language used alongside HTML and CSS to give functionality to web pages.'
+    {
+      label: 'Tags',
+      path: '/tags'
     },
-    nodejs: {
-      name: 'Node.js',
-      description: 'Node.js is a tool for executing JavaScript in a variety of environments.'
-    },
-    react: {
-      description: 'React is an open source JavaScript library used for designing user interfaces.'
+    {
+      label: 'About',
+      path: '/pages/about'
+    }
+  ],
+  author: {
+    name: 'Hai DV',
+    photo: '/photo.jpeg',
+    bio: 'Software Engineer. Going to be Full-stack Javascript Developer',
+    contacts: {
+      email: 'gemini.wind285@gmail.com',
+      facebook: '#',
+      telegram: '#',
+      twitter: '#',
+      github: 'GeminiWind',
+      rss: '',
+      vkontakte: '',
+      linkedin: 'dinh-van-hai',
+      instagram: '#',
+      line: '',
+      gitlab: '',
+      weibo: ''
     }
   }
-}
+};
