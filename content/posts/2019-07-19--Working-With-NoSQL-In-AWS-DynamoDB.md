@@ -29,6 +29,7 @@ Common use cases for DynamoDB:
     - Part 2: [Working with NoSQL in AWS: DynamoDB](https://blog.haidv.me/amazon-web-services/working-with-aws-dynamodb)
     - Part 3: [EC2: The Backbone of AWS (TBD)](https://blog.haidv.me)
     - Part 4: [SQS: Do you know queue in AWS](https://blog.haidv.me/amazon-web-services/do-you-know-queue-in-aws)
+    - Part 5: [Configure SNS to send your notification](https://blog.haidv.me/amazon-web-services/configure-sns-to-send-your-notification)
 
 
 ## Table
