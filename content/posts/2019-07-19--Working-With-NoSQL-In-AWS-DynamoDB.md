@@ -3,7 +3,7 @@ title: "AWS - Working with NoSQL in AWS: DynamoDB"
 date: "2019-07-19T22:40:32.169Z"
 template: "post"
 draft: false
-slug: "/working-with-aws-dynamodb"
+slug: "/amazon-web-services/working-with-aws-dynamodb"
 category: "AWS"
 tags:
   - "AWS 101"
@@ -25,10 +25,11 @@ Common use cases for DynamoDB:
 
     *[AWS 101](http://blog.haidv.me/tag/aws-101/) is an original series for developer to get started with AWS, actually it's my note and summary I've made in working with AWS in our project*
 
-    - Part 1: [Getting Started With Simple Storage Object (S3)](https://blog.haidv.me/getting-started-with-aws-s3)
-    - Part 2: [Working with NoSQL in AWS: DynamoDB](https://blog.haidv.me/working-with-aws-dynamodb)
+    - Part 1: [Getting Started With Simple Storage Object (S3)](https://blog.haidv.me/amazon-web-services/getting-started-with-aws-s3)
+    - Part 2: [Working with NoSQL in AWS: DynamoDB](https://blog.haidv.me/amazon-web-services/working-with-aws-dynamodb)
     - Part 3: [EC2: The Backbone of AWS (TBD)](https://blog.haidv.me)
-    - Part 4: [SQS: Do you know queue](https://blog.haidv.me/aws-sqs-do-you-know-queue)
+    - Part 4: [SQS: Do you know queue in AWS](https://blog.haidv.me/amazon-web-services/do-you-know-queue-in-aws)
+
 
 ## Table
 

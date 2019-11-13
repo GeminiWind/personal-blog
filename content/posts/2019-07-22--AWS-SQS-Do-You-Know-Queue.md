@@ -1,15 +1,15 @@
 ---
-title: "AWS: SQS - Do you know queue"
+title: "AWS: SQS - Do you know queue in AWS"
 date: "2019-07-22T22:40:32.169Z"
 template: "post"
 draft: false
-slug: "/aws-sqs-do-you-know-queue"
+slug: "/amazon-web-services/do-you-know-queue-in-aws"
 category: "AWS"
 tags:
   - "AWS 101"
   - "SQS"
-  - "Queue"
-  - "Message broker"
+  - "queue"
+  - "message broker"
 description: "Amazon Simple Queue Service (Amazon SQS) offers a secure, durable, and available hosted queue that lets you integrate and decouple distributed software systems and components."
 socialImage: "/media/sqs/sqs.png"
 ---
@@ -48,10 +48,10 @@ Common use cases for SQS
 
       *[AWS 101](http://blog.haidv.me/tag/aws-101/) is an original series for developer to get started with AWS, actually it's my note and summary I've made in working with AWS in our project*
 
-      - Part 1: [Getting Started With Simple Storage Object (S3)](https://blog.haidv.me/getting-started-with-aws-s3)
-      - Part 2: [Working with NoSQL in AWS: DynamoDB](https://blog.haidv.me/working-with-aws-dynamodb)
+      - Part 1: [Getting Started With Simple Storage Object (S3)](https://blog.haidv.me/amazon-web-services/getting-started-with-aws-s3)
+      - Part 2: [Working with NoSQL in AWS: DynamoDB](https://blog.haidv.me/amazon-web-services/working-with-aws-dynamodb)
       - Part 3: [EC2: The Backbone of AWS (TBD)](https://blog.haidv.me)
-      - Part 4: [SQS: Do you know queue](https://blog.haidv.me/aws-sqs-do-you-know-queue)
+      - Part 4: [SQS: Do you know queue in AWS](https://blog.haidv.me/amazon-web-services/do-you-know-queue-in-aws)
 
 
 ## Basic Architecture
@@ -187,4 +187,4 @@ It helps lower cost and also increases the throughput
 - A Node.js introduction to Amazon Simple Queue Service (SQS): _https://medium.com/@drwtech/a-node-js-introduction-to-amazon-simple-queue-service-sqs-9c0edf866eca_
 - Deduplicating Amazon SQS Messages: _https://medium.com/swlh/deduplicating-amazon-sqs-messages-dc114d1e6545_
 - Amazon Simple Queue Service: _https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html_
-- Serverless SQS + Lambda Example: _https://github.com/GeminiWind/lambda-sqs-long-polling_
+- SQS Long Polling with Lambda Handler Example: _https://github.com/GeminiWind/serveless-examples/tree/master/aws-lambda-sqs-long-polling_
