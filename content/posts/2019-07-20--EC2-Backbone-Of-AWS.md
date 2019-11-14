@@ -28,13 +28,14 @@ Amazon EC2 provides the following features:
 - Metadata, known as tags, that you can create and assign to your Amazon EC2 resources
 - Virtual networks you can create that are logically isolated from the rest of the AWS cloud, and that you can optionally connect to your own network, known as virtual private clouds (VPCs)
 
-    *[AWS 101](http://blog.haidv.me/tag/aws-101/) is an original series for developer to get started with AWS, actually it's my note and summary I've made in working with AWS in our project*
+  >   *[AWS 101](http://blog.haidv.me/tag/aws-101/) is an original series for developer to get started with AWS, actually it's my note and summary I've made in working with AWS in our project*
 
     - Part 1: [Getting Started With Simple Storage Object (S3)](https://blog.haidv.me/amazon-web-services/getting-started-with-aws-s3)
     - Part 2: [Working with NoSQL in AWS: DynamoDB](https://blog.haidv.me/amazon-web-services/working-with-aws-dynamodb)
     - Part 3: [EC2: The Backbone of AWS](https://blog.haidv.me/amazon-web-services/ec2-the-backbone-of-aws)
     - Part 4: [SQS: Do you know queue in AWS](https://blog.haidv.me/amazon-web-services/do-you-know-queue-in-aws)
     - Part 5: [Configure SNS to send your notification](https://blog.haidv.me/amazon-web-services/configure-sns-to-send-your-notification)
+    - Part 6: [Manage your network in Cloud with VPC](https://blog.haidv.me/amazon-web-services/manage-your-network-in-cloud-with-vpc)
 
 ## Amazon EC2 Terminology
 
@@ -186,4 +187,4 @@ To connect your instance, you can get the instruction by choosing your instance,
 
 Congratulation, you have your first instance in EC2.
 
-Keep watching how we can handle scaling problem in EC2
+Let's deploy your code to EC2 and make the real thing.
