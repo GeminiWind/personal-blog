@@ -34,12 +34,12 @@ VPC is associated with a Region. By default, AWS already provides you with a def
 
 ## VPC Terminology
 
-- __CIDR__: CIDR, which stands for Classless Inter-Domain Routing, is an IP addressing scheme that improves the allocation of IP addresses. For example: `10.0.0.16`. More detailed about CIDR in [here](https://www.keycdn.com/support/what-is-cidr)
+- __CIDR__: CIDR, which stands for Classless Inter-Domain Routing, is an IP addressing scheme that improves the allocation of IP addresses. For example: `10.0.0.0/16`. More detailed about CIDR in [here](https://www.keycdn.com/support/what-is-cidr)
 
 - __Subnet__: A subnet is a logical group of a networks which differ depending on the requirements. Subnetting let us break a network into smaller parts. Think of it as a network in a huge building with 100 different companies and 100 divisions each, each with network groups.
 
     - __Public Subnet__: A public subnet is a subnet that's associated with a route table that has a route to an Internet gateway. The instance  in the public subnet can send outbound traffic directly to the Internet
-    - __Private Subnet__: subnet doesn't have a route to the Internet Gateway. The instance  in the public subnet can not send outbound traffic directly to the Internet
+    - __Private Subnet__: subnet doesn't have a route to the Internet Gateway. The instance  in the private subnet can not send outbound traffic directly to the Internet
 
 - __Route Table__: A route table contains a set of rules, called routes, that are used to determine where network traffic from your subnet is directed.
 - __Internet Gateway__: An internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the internet
@@ -47,7 +47,7 @@ VPC is associated with a Region. By default, AWS already provides you with a def
 
 In this article, I'll do the following thing
 
-- Create VPC `my-vpc` with IPv4 CIDR is `10.0.0.16`
+- Create VPC `my-vpc` with IPv4 CIDR is `10.0.0.0/16`
 - Create two subnets in `my-vpc`
     - Public subnet `public-2a` with CIDR is `10.0.0.0/23` & Availability Zone is `ap-southeast-2a`
     - Private subnet `private-2b` with CIDR is `10.0.0.2/23` & Availability Zone is `ap-southeast-2b`
@@ -75,7 +75,7 @@ Click Create VPC button to create your own VPC
   - To specify a range of IPs
   - The notation is `<ip notation>/<number>`
 
-In the above example, my IPv4 CIDR is `10.0.0.16`, it means that I 'll have 65536 IPs in my network
+In the above example, my IPv4 CIDR is `10.0.0.0/16`, it means that I 'll have 65536 IPs in my network
 
 __2. Create subnets in VPC__
 
