@@ -29,18 +29,10 @@ module.exports = {
     photo: '/photo.jpeg',
     bio: 'Software Engineer. Going to be Full-stack Javascript Developer',
     contacts: {
+      facebook: 'haidv.77',
       email: 'gemini.wind285@gmail.com',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
       github: 'GeminiWind',
-      rss: '',
-      vkontakte: '',
-      linkedin: 'dinh-van-hai',
-      instagram: '#',
-      line: '',
-      gitlab: '',
-      weibo: ''
+      linkedin: 'dinh-van-hai'
     }
   }
 };
