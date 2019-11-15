@@ -99,7 +99,7 @@ __Note__: condition could not be used with primary key
 
 Range key is optional and can combine with supported conditional
 
-```
+```bash
 a = b — true if the attribute a is equal to the value b
 a < b — true if a is less than b
 a <= b — true if a is less than or equal to b

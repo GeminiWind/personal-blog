@@ -129,11 +129,10 @@ __5. Testing by launching EC2 instance__
 Finally, let’s test that our network is working properly.
 Launch an EC2 instance — use the “t2.micro” instance type as it is free tier eligible.
 Go to step #3 to configure the instance. This is where we configure the network this instance is going to use
-  ```
-  VPC: `my-vpc`
-  Subnet: `public-2a`
-  Auto-assign Public IP: `Enabled`
-  ```
+
+  - VPC: `my-vpc`
+  - Subnet: `public-2a`
+  - Auto-assign Public IP: `Enabled`
 
 ![Creating EC2 Instance](/media/vpc/test-instance.png)
 

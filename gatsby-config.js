@@ -112,14 +112,23 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 960,
-              withWebp: true,
+              maxWidth: 990,
               ignoreFileExtensions: [],
+              linkImagesToOriginal: false
             }
+          },
+          {
+            resolve: `gatsby-remark-images-medium-zoom`,
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: { wrapperStyle: 'margin-bottom: 1.0725rem' }
+          },
+          {
+            resolve: `gatsby-remark-vscode`,
+            options: {
+              colorTheme: 'Solarized Dark',
+            }
           },
           'gatsby-remark-autolink-headers',
           'gatsby-remark-prismjs',
