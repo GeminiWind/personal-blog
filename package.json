@@ -1,5 +1,6 @@
 {
   "version": "0.0.1",
+  "private": true,
   "name": "haidv-blog",
   "description": "HaiDV Blog",
   "main": "n/a",
@@ -16,7 +17,7 @@
     "test:coverage": "jest --coverage --config ./jest/jest-config.js",
     "test:watch": "jest --watch --config ./jest/jest-config.js"
   },
-  "repository": "https://github.com/alxshelepenok/gatsby-starter-lumen",
+  "repository": "https://github.com/GeminiWind/personal-blog",
   "author": "Gemini Wind <gemini.wind285@gmail.com>",
   "license": "MIT",
   "dependencies": {

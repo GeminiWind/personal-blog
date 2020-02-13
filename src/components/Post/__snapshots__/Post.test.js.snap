@@ -8,7 +8,7 @@ exports[`Post renders correctly 1`] = `
     className="post__home-button"
     href="/"
   >
-    All Articles
+    Home
   </a>
   <div
     className="post__content"
@@ -80,15 +80,15 @@ exports[`Post renders correctly 1`] = `
       >
         Test bio
         <a
-          className="author__bio-twitter"
-          href="https://www.twitter.com/#"
+          className="author__bio-linkedin"
+          href="https://www.linkedin.com/in/undefined"
           rel="noopener noreferrer"
           target="_blank"
         >
           <strong>
             Test name
           </strong>
-           on Twitter
+           on Linkedin
         </a>
       </p>
     </div>
